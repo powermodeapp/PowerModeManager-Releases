@@ -1,22 +1,36 @@
 # PowerModeManager Releases
 
-Official download repository for PowerModeManager. Product details, installation guidance, privacy information, and the current download link are published on the [official website](https://powermodeapp.github.io/).
+Official distribution repository for PowerModeManager. Product details and English and Korean installation guidance are published on the [official website](https://powermodeapp.github.io/).
 
-## Release status
+## Latest release
 
-The first stable release, **1.0.0 (Build 8)**, is being prepared with macOS 15 as its minimum deployment target. It will target Apple Silicon Macs with an arm64 DMG. The site and this repository will provide the download after signing, notarization, installation, and supported-system checks are complete. Build 7 targeted macOS 13 and has been withdrawn from the draft release.
+The stable release is **1.0.0 (Build 8)**. It provides a signed and notarized DMG for Apple Silicon Macs, with macOS 15 as the minimum version. There is no public beta download, and ZIP distribution is not offered.
 
-There is no public beta download. ZIP distribution is not part of the first release.
+## Install with Homebrew
 
-## Support target
+Homebrew Casks from non-official taps require explicit trust. Add the tap, trust only the PowerModeManager Cask, then install:
 
-The selected minimum deployment target is macOS 15. The intended first-release range is Apple Silicon with macOS 15–27 and remains subject to device verification; exact Mac models and macOS build numbers will be listed in release notes. Intel support is deferred until an Intel Mac can be tested.
+```sh
+brew tap powermodeapp/tap
+brew trust --cask powermodeapp/tap/powermodemanager
+brew install --cask powermodemanager
+```
+
+Upgrade with `brew upgrade --cask powermodemanager`. See the [Homebrew tap](https://github.com/powermodeapp/homebrew-tap) for details.
+
+## Install from the DMG
+
+Download [PowerModeManager.dmg](https://github.com/powermodeapp/PowerModeManager-Releases/releases/latest/download/PowerModeManager.dmg) and its [SHA-256 checksum](https://github.com/powermodeapp/PowerModeManager-Releases/releases/latest/download/PowerModeManager.dmg.sha256) from the latest release. Open the DMG and move PowerModeManager to Applications.
+
+## Supported systems and verification
+
+The release requires Apple Silicon and macOS 15 or later. Build 8 was verified on Mac16,8 with macOS 27.0.1 (Build 26A434) and in a macOS Sequoia UTM virtual machine. Intel Macs are not supported.
 
 Server Mode disables system sleep in its profile and may increase power use and battery drain on a laptop. Review the proposed settings, keep a MacBook connected to power while using Server Mode, and restore Normal Mode when continuous availability is no longer needed. The app does not provide battery charge limits or stop charging.
 
 ## Get help
 
-Report a problem in [GitHub Issues](https://github.com/powermodeapp/PowerModeManager-Releases/issues) in English or Korean. Include the app version, macOS version, Mac model, and steps to reproduce. Review diagnostic data before sharing; reports should not include raw diagnostic files or private host information.
+Report a problem in [GitHub Issues](https://github.com/powermodeapp/PowerModeManager-Releases/issues) in English or Korean. Include the app version, macOS version, Mac model, and steps to reproduce. Review diagnostic data before sharing; do not attach raw diagnostics that may contain private host information.
 
 For a suspected security vulnerability, use [private vulnerability reporting](https://github.com/powermodeapp/PowerModeManager-Releases/security/advisories/new). Do not post security details in a public issue.
 
