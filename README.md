@@ -4,13 +4,13 @@ Official download repository for PowerModeManager. Product details, installation
 
 ## Release status
 
-The first stable release, **1.0.0 (Build 7)**, is being verified. It will target Apple Silicon Macs with an arm64 DMG. The site and this repository will provide the download after signing, notarization, installation, and supported-system checks are complete. Build 6 predates the completed Korean localization and is not the public release candidate.
+The first stable release, **1.0.0 (Build 8)**, is being prepared with macOS 15 as its minimum deployment target. It will target Apple Silicon Macs with an arm64 DMG. The site and this repository will provide the download after signing, notarization, installation, and supported-system checks are complete. Build 7 targeted macOS 13 and has been withdrawn from the draft release.
 
 There is no public beta download. ZIP distribution is not part of the first release.
 
 ## Support target
 
-The planned initial support range is Apple Silicon with macOS 13–27. The exact Mac models and macOS build numbers verified for the release will be listed in its notes. Intel support is deferred until an Intel Mac can be tested.
+The selected minimum deployment target is macOS 15. The intended first-release range is Apple Silicon with macOS 15–27 and remains subject to device verification; exact Mac models and macOS build numbers will be listed in release notes. Intel support is deferred until an Intel Mac can be tested.
 
 Server Mode disables system sleep in its profile and may increase power use and battery drain on a laptop. Review the proposed settings, keep a MacBook connected to power while using Server Mode, and restore Normal Mode when continuous availability is no longer needed. The app does not provide battery charge limits or stop charging.
 
