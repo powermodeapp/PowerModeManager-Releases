@@ -1,0 +1,22 @@
+name: Feature request (English)
+description: Suggest an improvement to PowerModeManager.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please describe the problem or workflow first. Do not include personal or diagnostic data in this public report.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Tell us what you are trying to do and what gets in the way.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to happen?
+      description: Describe the change that would help.
+    validations:
+      required: true

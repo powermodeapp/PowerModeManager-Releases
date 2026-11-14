@@ -1,0 +1,55 @@
+name: 버그 제보 (한국어)
+description: PowerModeManager에서 재현되는 문제를 제보합니다.
+title: "[버그]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        [공식 웹사이트](https://powermodeapp.github.io/)에서 출시 상태와 지원 환경을 먼저 확인해 주세요. 이슈는 공개됩니다. 원본 진단 파일을 첨부하거나 호스트 이름, 일련 번호 등 개인정보를 적지 마세요.
+  - type: input
+    id: app-version
+    attributes:
+      label: PowerModeManager 버전 및 빌드
+      placeholder: "1.0.0 (Build 7)"
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS 버전 및 빌드
+      placeholder: "macOS 27.0.1 (26A434)"
+    validations:
+      required: true
+  - type: input
+    id: mac-model
+    attributes:
+      label: Mac 모델
+      description: 모델명이나 모델 식별자만 적고 일련 번호는 적지 마세요.
+      placeholder: "MacBook Pro (Apple silicon)"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 재현 절차
+      description: 수행한 작업과 발생한 일을 순서대로 설명해 주세요.
+      placeholder: |
+        1. PowerModeManager 열기
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 예상한 동작과 실제 동작
+      description: 어떤 결과를 예상했고 실제로는 어떻게 되었나요?
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 개인정보 확인
+      options:
+        - label: 공개 제보에서 호스트 이름, 일련 번호 등 개인정보를 지웠고, 검토하지 않은 진단 보고서를 첨부하지 않았습니다.
+          required: true

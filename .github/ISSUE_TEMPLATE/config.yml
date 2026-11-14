@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Official website and installation guidance
+    url: https://powermodeapp.github.io/
+    about: Check current support and release status before reporting a problem.
+  - name: Private security report
+    url: https://github.com/powermodeapp/PowerModeManager-Releases/security/advisories/new
+    about: Report suspected vulnerabilities privately. Do not post security details in a public issue.

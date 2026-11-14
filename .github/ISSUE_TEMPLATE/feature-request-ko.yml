@@ -1,0 +1,22 @@
+name: 기능 제안 (한국어)
+description: PowerModeManager 개선 사항을 제안합니다.
+title: "[기능 제안]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        먼저 겪고 있는 문제나 작업 흐름을 설명해 주세요. 공개 제보에 개인정보나 진단 자료를 포함하지 마세요.
+  - type: textarea
+    id: problem
+    attributes:
+      label: 어떤 문제를 해결하려고 하나요?
+      description: 하려는 작업과 어려운 점을 설명해 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 어떤 동작을 원하나요?
+      description: 도움이 될 변경 사항을 설명해 주세요.
+    validations:
+      required: true

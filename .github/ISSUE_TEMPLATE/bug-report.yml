@@ -1,0 +1,55 @@
+name: Bug report (English)
+description: Report a reproducible problem with PowerModeManager.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check the [official website](https://powermodeapp.github.io/) for release status and supported configurations. Issues are public. Do not attach raw diagnostic files or include host names, serial numbers, or other private information.
+  - type: input
+    id: app-version
+    attributes:
+      label: PowerModeManager version and build
+      placeholder: "1.0.0 (Build 7)"
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version and build
+      placeholder: "macOS 27.0.1 (26A434)"
+    validations:
+      required: true
+  - type: input
+    id: mac-model
+    attributes:
+      label: Mac model
+      description: Model name or model identifier only. Do not include the serial number.
+      placeholder: "MacBook Pro (Apple silicon)"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Describe what you did and what happened.
+      placeholder: |
+        1. Open PowerModeManager
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+      description: What did you expect to happen, and what happened instead?
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I reviewed this public report and removed host names, serial numbers, and other private information. I have not attached an unreviewed diagnostics report.
+          required: true
